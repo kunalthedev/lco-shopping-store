@@ -5,7 +5,7 @@ import CardItem from './CardItem'
 import { random, commerce } from "faker";
 import { Container, Col, Row } from "reactstrap";
 
-// const apiKey = "INSET_YOUR_KEY_HERE";
+const apiKey = "INSET_YOUR_KEY_HERE";
 
 // const url = "https://api.pexels.com/v1/search?query=laptop&per_page=6&page=1";
 const localurl = "https://api.npoint.io/d915e4692734267891d7";
