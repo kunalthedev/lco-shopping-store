@@ -5,10 +5,10 @@ import CardItem from './CardItem'
 import { random, commerce } from "faker";
 import { Container, Col, Row } from "reactstrap";
 
-const apiKey = "INSET_YOUR_KEY_HERE";
+const apiKey = "563492ad6f9170000100000106834a21eae24886b928ed777617682a";
 
-// const url = "https://api.pexels.com/v1/search?query=laptop&per_page=6&page=1";
-const localurl = "https://api.npoint.io/d915e4692734267891d7";
+const url = "https://api.pexels.com/v1/search?query=laptop&per_page=6&page=1";
+// const localurl = "https://api.npoint.io/d915e4692734267891d7";
 const BuyPage = ({ addInCart }) => {
   const [product, setProduct] = useState([]);
 
@@ -20,9 +20,10 @@ const BuyPage = ({ addInCart }) => {
   //     });
 
   const fetchPhotos = async () => {
-    const { data } = await Axios.get(localurl, {});
-
-    const { photos } = data;
+    const {data} = await Axios.get(url, {
+      headers: {Authorization: apiKey}
+    });
+        const { photos } = data;
 
     const allProduct = photos.map(photo => ({
       smallImage: photo.src.medium,
@@ -31,9 +32,26 @@ const BuyPage = ({ addInCart }) => {
       productPrice: commerce.price(),
       id: random.uuid()
     }));
-
+    console.log(allProduct);
     setProduct(allProduct);
-  };
+  }
+
+  // const fetchPhotos = async () => {
+  //   const { data } = await Axios.get(url, {header: {
+  //            Authorization: apiKey}});
+
+  //   const { photos } = data;
+
+  //   const allProduct = photos.map(photo => ({
+  //     smallImage: photo.src.medium,
+  //     tinyImage: photo.src.tiny,
+  //     productName: random.word(),
+  //     productPrice: commerce.price(),
+  //     id: random.uuid()
+  //   }));
+
+  //   setProduct(allProduct);
+  // };
 
   useEffect(() => {
     fetchPhotos();

@@ -7,7 +7,7 @@ const CardItem = ({product, addInCart}) => {
             <CardImg top height="250" width="100%" src={product.smallImage}/>
             <CardBody className="text-center">
                 <CardTitle>{product.productName}</CardTitle>
-                <CardText>Price: {product.productPrice}</CardText>
+                <CardText>Price: {product.productPrice} $</CardText>
                 <Button color="success" onClick={()=> addInCart(product)}>Buy Now</Button>
             </CardBody>
         </Card>

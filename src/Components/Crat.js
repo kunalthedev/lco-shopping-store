@@ -18,7 +18,7 @@ const Crat = ({cartItem, removeItem, buyNow}) => {
                             </Col>
                             <Col className="text-center">
                                 <div className="text-primary">{item.productName}</div>
-                                <div>Price: {item.productPrice}</div>
+                                <div>Price: {item.productPrice} $</div>
                                 <Button color="danger" onClick={() => removeItem(item)}>Remove</Button>
                             </Col>
                         </Row>
@@ -31,7 +31,7 @@ const Crat = ({cartItem, removeItem, buyNow}) => {
                         Grand Total
                     </CardHeader>
                     <CardBody>
-                        Your Amount for {cartItem.length} product is {amount}
+                        Your Amount for {cartItem.length} product is {amount} $
                     </CardBody>
                     <CardFooter>
                         <Button color="success" onClick={buyNow}> Payy here</Button>
