@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/lco-shopping-store/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/lco-shopping-store/static/js/main.e8ad386c.chunk.js",
+    "main.js.map": "/lco-shopping-store/static/js/main.e8ad386c.chunk.js.map",
+    "runtime-main.js": "/lco-shopping-store/static/js/runtime-main.ef06243d.js",
+    "runtime-main.js.map": "/lco-shopping-store/static/js/runtime-main.ef06243d.js.map",
+    "static/css/2.56001c6a.chunk.css": "/lco-shopping-store/static/css/2.56001c6a.chunk.css",
+    "static/js/2.37f3e96d.chunk.js": "/lco-shopping-store/static/js/2.37f3e96d.chunk.js",
+    "static/js/2.37f3e96d.chunk.js.map": "/lco-shopping-store/static/js/2.37f3e96d.chunk.js.map",
+    "static/js/3.37087191.chunk.js": "/lco-shopping-store/static/js/3.37087191.chunk.js",
+    "static/js/3.37087191.chunk.js.map": "/lco-shopping-store/static/js/3.37087191.chunk.js.map",
+    "index.html": "/lco-shopping-store/index.html",
+    "static/css/2.56001c6a.chunk.css.map": "/lco-shopping-store/static/css/2.56001c6a.chunk.css.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/lco-shopping-store/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.37f3e96d.chunk.js.LICENSE.txt": "/lco-shopping-store/static/js/2.37f3e96d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef06243d.js",
+    "static/css/2.56001c6a.chunk.css",
+    "static/js/2.37f3e96d.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.e8ad386c.chunk.js"
+  ]
+}
